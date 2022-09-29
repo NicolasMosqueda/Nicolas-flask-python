@@ -1,0 +1,18 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Group" %}
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here, bootstrap is a wise choice ->
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>Group Project Outline </strong></h1>
+        <p class="text-secondary">Our plan for our porject is to make a game which involes the user to go through an escpe room. The user will be able to go through several scenarios which will all lead to different outcomes. We plan to make the game very interactive and enjoyble for the user. We plan to make our game very complex to fulfill the college board requirements and we will make sure we all understand the code and have the ability to explain it.</p>
+    </div>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
